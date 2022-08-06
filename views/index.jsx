@@ -1,9 +1,9 @@
 const React = require('react')
 const Default = require('./layouts/Default')
 
-function Index({breads, title}) {
+function Index({ breads, title }) {
     return (
-        <Default title = {title}>
+        <Default title={title}>
             <h2>Index Page</h2>
             <ul>
                 {
@@ -19,6 +19,10 @@ function Index({breads, title}) {
                 }
 
             </ul>
+
+            <div className="newButton">
+                <a href="/breads/new"><button>Add a new bread</button></a>
+            </div>
         </Default>
     )
 }
